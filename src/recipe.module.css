@@ -1,0 +1,47 @@
+.recipe{  
+    background: white;
+    border-radius: 10px;
+    box-shadow: gray;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    min-width: 40%;
+    margin: 20px;
+}
+
+.title{
+    text-decoration: underline;
+}
+
+.image{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.calories{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.ingredients{
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    list-style-position: inside;
+    line-height: 60px;
+    padding-inline-start: 0px;
+}
+
+ol{
+    counter-reset: item;
+}
+ol li {
+    display: block;
+}
+
+ol li:before {
+    content: counter(item) ". "; 
+    counter-increment: item; 
+    font-weight: bold;
+}
